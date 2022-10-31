@@ -37,12 +37,6 @@ $(document).ready(function(){
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Freelancer","Fullstack Mern Developer","Web Designer","Web Developer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
 
     $('.carousel').owlCarousel({
         margin: 20,

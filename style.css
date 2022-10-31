@@ -345,7 +345,8 @@ section .title::after {
   transform: rotateY(180deg);
 }
 
-.front_card,.back_card {
+.front_card,
+.back_card {
   backface-visibility: hidden !important;
   position: relative;
   left: 0 !important;
@@ -367,7 +368,6 @@ section .title::after {
   position: absolute;
 }
 
- 
 .services .serv-content .card:hover {
   background: var(--color);
 }
@@ -377,7 +377,6 @@ section .title::after {
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
-
 
 .services .serv-content .card .box:hover .back_card {
   display: block;
@@ -789,8 +788,11 @@ footer span a:hover {
     font-size: 23px;
     line-height: 38px;
   }
-}
 
+  .serv-content {
+    background-color: red;
+  }
+}
 
 .href {
   text-decoration: none;
@@ -830,8 +832,57 @@ footer span a:hover {
   color: black;
 }
 
-
 .submit:hover {
   background-color: black;
   color: yellow;
+}
+
+.serviceImg {
+  margin: auto;
+  width: 500px;
+  background-color: black;
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.tarif,
+.carslist {
+  padding: 20px;
+}
+
+.tarif li {
+  list-style-type: none;
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.carslist li {
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.red {
+  color: red;
+}
+
+.red p {
+  padding-left: 20px;
+}
+
+.serviceImg:nth-child(2) {
+  margin-top: -194px;
+}
+
+
+@media (max-width:1150px)  {
+  .serviceImg:nth-child(2) {
+    margin-top: 0px;
+  } 
 }
